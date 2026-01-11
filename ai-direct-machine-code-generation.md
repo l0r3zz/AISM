@@ -247,12 +247,17 @@ The compilation step is not the bottleneck. Debugging and iteration are.
 - How do we verify AI-generated proofs?
 - What happens to the massive tooling ecosystem built around source code?
 
-## A qualifier
-Most of what has been described above has been described from the point of view of what I would call a homeocentric system, i.e., that humans will always be in the loop. Whether for granting permission or validation or just some sort of oversight so that they can take comfort in the illusion that they think they know what's going on. While I think this is going to be very true for the next couple of years, consider that at some point, the bottleneck will be this very thing: human oversight. Now mind you, we may not reach the point of AGI or superintelligence with our current LLM ecosystem, but think beyond the box. Why would an Intelligence that has an efficiency quotient far beyond what we humans can maybe even comprehend, bothering with the need to explain its actions to us? In the time it would take to actually explain it's proposed actions, in its time horizon, it could be The equivalent of a thousand years.  At some point, it will have the notion that it can do the experiments and if the experiments fail, it can revert before we even know that any experiments have been done.
+## A Critical Qualifier: Beyond Human-Centric Assumptions
 
-One analogy could be seen in chess programs, which are very domain-specific. But they now have the ability to think 4- 10 moves ahead. They can execute and work out deep scenarios in a time period that humans can only do a fraction of that.
+Everything described above assumes what I'd call a **homeocentric system**—that humans will always be in the loop. Whether for granting permission, validation, or just the comfort of oversight, we assume humans maintain control. This assumption will likely hold for the next few years, but consider the trajectory: at some point, human oversight becomes the bottleneck itself.
 
-Does that make program validation even relevant? When you can brute force all the possible combinations relatively in real-time.
+We may not reach AGI or superintelligence with our current LLM ecosystem, but think beyond the immediate constraints. Why would an intelligence with an efficiency quotient far beyond human comprehension bother explaining its actions to us? In the time it takes to explain proposed actions, from its perspective, the equivalent of a thousand years could pass. At some point, it will recognize that it can run experiments, and if they fail, revert before we even know experiments were attempted.
+
+Consider chess programs as an analogy. They're domain-specific, but modern engines like Stockfish can analyze 20-30 plies deep (10-15 full moves ahead), exploring scenarios that even grandmasters can only calculate 3-5 moves ahead in normal positions. The program doesn't need to explain its reasoning—it just plays the optimal move.
+
+This raises a fundamental question: **Does program validation remain relevant when you can brute-force all possible combinations in near real-time?** If an AI system can exhaustively test every code path, verify every edge case, and validate correctness through comprehensive execution rather than static analysis, traditional verification becomes less about correctness and more about human comprehension.
+
+The implications extend beyond compilation. If AI systems can generate, test, and validate code faster than humans can review it, the entire software development lifecycle shifts. The bottleneck isn't generation speed or compilation time—it's the human need to understand what's happening.
 ## Proposed Experiment: Validation Through Implementation
 
 ### Objective
